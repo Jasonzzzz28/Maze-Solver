@@ -1,22 +1,3 @@
-#!/usr/local/bin/ruby
-
-# ########################################
-# CMSC 330 - Project 1
-# ########################################
-
-#-----------------------------------------------------------
-# FUNCTION DECLARATIONS
-#-----------------------------------------------------------
-
-def parse(file)
-  puts "Not yet implemented"    
-end
-
-#-----------------------------------------------------------
-# the following is a parser that reads in a simpler version
-# of the maze files.  Use it to get started writing the rest
-# of the assignment.  You can feel free to move or modify 
-# this function however you like in working on your assignment.
 
 def read_and_print_simple_file(file)
   line = file.gets
@@ -562,14 +543,12 @@ def solve(file)
   end
   
 end
-
+  
 def main(command_name, file_name)
   maze_file = open(file_name)
 
   # perform command
   case command_name
-  when "parse"
-    parse(maze_file)
     
   when "open"
     opening(maze_file)
